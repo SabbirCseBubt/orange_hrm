@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Negative Suite">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="Negative Tests">
+
+        <classes>
+
+            <class name="testCases.TC_InvalidUsername"/>
+
+            <class name="testCases.TC_InvalidPassword"/>
+
+            <class name="testCases.TC_BlankUsername"/>
+
+            <class name="testCases.TC_BlankPassword"/>
+
+        </classes>
+
+    </test>
+
+</suite>

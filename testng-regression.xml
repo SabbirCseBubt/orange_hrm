@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="Regression Tests">
+
+        <classes>
+
+            <class name="testCases.TC_ValidLogin"/>
+
+            <class name="testCases.TC_SearchMenuValidation"/>
+
+            <class name="testCases.TC_AddEmployee"/>
+
+            <class name="testCases.TC_SearchEmployee"/>
+
+            <class name="testCases.TC_EditAllOptionalFields"/>
+
+            <class name="testCases.TC_DeleteEmployee"/>
+
+        </classes>
+
+    </test>
+
+</suite>
